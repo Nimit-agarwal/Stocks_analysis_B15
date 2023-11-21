@@ -7,6 +7,9 @@ st.set_page_config(
     page_icon="🏛️",
 )
 
+with open("/Users/nimitagarwal/Documents/Stocks_analysis_B15/streamlit_app/designing.css") as source_des:
+    st.markdown(f'<style>{source_des.read()}</style>', unsafe_allow_html=True)
+
 st.markdown("""
 <style>
 body {
@@ -40,7 +43,7 @@ except:
     st.stop()
 
 
-st.markdown("# **Stock Info Plus**")
+st.markdown("# **Stock Information**")
 
 st.markdown("##### **Enhancing Your Stock Market Insights**")
 

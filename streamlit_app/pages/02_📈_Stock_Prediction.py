@@ -3,10 +3,15 @@ import streamlit as st
 
 from helper import *
 
+
 st.set_page_config(
     page_title="Stock Price Prediction",
     page_icon="📈",
 )
+
+with open("/Users/nimitagarwal/Documents/Stocks_analysis_B15/streamlit_app/designing.css") as source_des:
+    st.markdown(f'<style>{source_des.read()}</style>', unsafe_allow_html=True)
+
 
 st.markdown("""
 <style>
