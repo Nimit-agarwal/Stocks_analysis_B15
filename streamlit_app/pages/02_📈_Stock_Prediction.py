@@ -42,8 +42,8 @@ interval = st.sidebar.selectbox("Choose an interval", periods[period])
 
 
 
-st.markdown("# **Stock Price Prediction**")
-st.markdown("##### **Enhance Investment Decisions through Data-Driven Forecasting**")
+st.markdown("# **📈 Stock Prediction**")
+st.markdown(f"##### **Optimize investment strategies with data-driven forecasting specifically tailored for {stock}**")
 
 
 stock_data = fetch_stock_history(stock_ticker, period, interval)

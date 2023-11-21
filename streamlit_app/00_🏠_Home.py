@@ -19,7 +19,7 @@ st.markdown("""
     }
     </style>
     """, unsafe_allow_html=True)
-st.markdown("# **About Us**")
+st.markdown("# **🏠 Home**")
 st.markdown("""
 We are a team of passionate individuals who believe in the power of data. 
 Our mission is to provide easy and accessible tools for everyone to understand, analyze, and predict the stock market. 
@@ -27,19 +27,19 @@ With our application, we aim to enhance your stock market insights by providing 
 """)
 st.markdown("## **Our Team**")
 st.markdown("""
-- **Nimit Agarwal**: Lead Developer & Data Scientist (GitHub)
-- **John Doe**: Machine Learning Engineer
-- **Jane Doe**: Software Engineer
-- **Richard Roe**: Product Manager
+- **Nimit Agarwal (E22CSEU0423)**
+- **Sonalika Goel (E22CSEU0428)**
+- **Rachit Katyal (E22CSEU0432)**
+- **Shivansh Pandey (E22CSEU1688)**
 """)
 st.markdown("## **Contributions**")
 st.markdown("""
 This application is a result of the collective efforts of our team. 
-Nimit Agarwal, our lead developer and data scientist, has played a pivotal role in bringing this project to life. 
+Nimit Agarwal, our lead developer has played a pivotal role in bringing this project to life. 
 His contributions have been instrumental in the development and success of this application, particularly in the areas of data analysis and stock prediction.
 """)
 st.markdown("## **Contact Us**")
 st.markdown("""
-Feel free to reach out to us at info@stockinfoplus.com.
+Feel free to reach out to us at nagarwal2526@gmail.com.
 """)
 

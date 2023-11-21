@@ -43,9 +43,9 @@ except:
     st.stop()
 
 
-st.markdown("# **Stock Information**")
+st.markdown("# **🏛️ Stock Information**")
 
-st.markdown("##### **Enhancing Your Stock Market Insights**")
+st.markdown(f"### **About {stock}**")
 
 
 
@@ -63,7 +63,7 @@ st.write('{}'.format(response.generations[0].text))
 
 
 
-st.markdown("## **Basic Information**")
+st.markdown("### **Basic Information**")
 
 col1, col2 = st.columns(2)
 
@@ -85,7 +85,7 @@ col1.dataframe(
 )
 col2.dataframe(pd.DataFrame({"Exchange": [stock_exchange]}), hide_index=True, width=500)
 
-st.markdown("## **Market Data**")
+st.markdown("### **Market Data**")
 
 col1, col2 = st.columns(2)
 
@@ -183,7 +183,7 @@ col3.dataframe(
     hide_index=True,
     width=300,
 )
-st.markdown("## **Volume and Shares**")
+st.markdown("### **Volume and Shares**")
 
 col1, col2 = st.columns(2)
 
@@ -266,7 +266,7 @@ col3.dataframe(
     width=300,
 )
 
-st.markdown("## **Dividends and Yield**")
+st.markdown("### **Dividends and Yield**")
 
 col1, col2, col3 = st.columns(3)
 
@@ -292,7 +292,7 @@ col3.dataframe(
     width=300,
 )
 
-st.markdown("## **Valuation and Ratios**")
+st.markdown("### **Valuation and Ratios**")
 
 col1, col2 = st.columns(2)
 
@@ -345,7 +345,7 @@ col2.dataframe(
     width=500,
 )
 
-st.markdown("## **Financial Performance**")
+st.markdown("### **Financial Performance**")
 
 col1, col2 = st.columns(2)
 
@@ -440,7 +440,7 @@ col2.dataframe(
     width=500,
 )
 
-st.markdown("## **Cash Flow**")
+st.markdown("### **Cash Flow**")
 
 col1, col2 = st.columns(2)
 
@@ -456,7 +456,7 @@ col2.dataframe(
     hide_index=True,
     width=500,
 )
-st.markdown("## **Analyst Targets**")
+st.markdown("### **Analyst Targets**")
 
 col1, col2 = st.columns(2)
 
