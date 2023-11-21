@@ -1,10 +1,20 @@
 import streamlit as st
 from helper import *
+import cohere
 
 st.set_page_config(
     page_title="Stock Info",
     page_icon="🏛️",
 )
+
+st.markdown("""
+<style>
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 20px;
+}
+</style>
+""", unsafe_allow_html=True)
 
 st.sidebar.markdown("## **User Input Features**")
 
@@ -33,6 +43,22 @@ except:
 st.markdown("# **Stock Info Plus**")
 
 st.markdown("##### **Enhancing Your Stock Market Insights**")
+
+
+
+co = cohere.Client('wmBrgevxRZ3eXb992VdiXgelFgGgKSTQ63gd2wt2') # This is your trial API key
+response = co.generate(
+  model='command',
+  prompt=f'Generate a paragraph only in 100 words about {stock} without asking any questions',
+  max_tokens=300,
+  temperature=0.9,
+  k=0,
+  stop_sequences=[],
+  return_likelihoods='NONE')
+st.write('{}'.format(response.generations[0].text))
+
+
+
 
 st.markdown("## **Basic Information**")
 

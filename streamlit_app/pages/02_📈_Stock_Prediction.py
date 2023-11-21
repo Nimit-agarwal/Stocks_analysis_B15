@@ -8,6 +8,14 @@ st.set_page_config(
     page_icon="📈",
 )
 
+st.markdown("""
+<style>
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    font-size: 20px;
+}
+</style>
+""", unsafe_allow_html=True)
 
 st.sidebar.markdown("## **User Input Features**")
 stock_dict = fetch_stocks()
