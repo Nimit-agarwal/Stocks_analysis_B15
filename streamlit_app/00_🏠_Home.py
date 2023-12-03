@@ -28,9 +28,6 @@ With our application, we aim to enhance your stock market insights by providing 
 st.markdown("## **Our Team**")
 st.markdown("""
 - **Nimit Agarwal (E22CSEU0423)**
-- **Sonalika Goel (E22CSEU0428)**
-- **Rachit Katyal (E22CSEU0432)**
-- **Shivansh Pandey (E22CSEU1688)**
 """)
 st.markdown("## **Contributions**")
 st.markdown("""
